@@ -1,0 +1,28 @@
+version: '3.1'
+services:
+
+  tomcat:
+    container_name: tomcat
+    image: abhisheknipun1/spring3hibernate
+    links:
+        - mysql
+        
+  mysql:
+    image: mysql
+    container_name: mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: employeedb
+        MYSQL_USER: root
+        MYSQL_PASSWORD: password
+    ports:
+        - "3306:3306"
+        
+  nginx:
+    container_name: nginx
+    image: abhisheknipun1/nginx
+    depends_on: 
+    - tomcat 
+    ports:
+      - "80:80"
+      - "443:443"
