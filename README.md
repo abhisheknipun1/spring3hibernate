@@ -23,7 +23,7 @@ docker-compose up -d
 
 # Run 127.0.0.1 from web browser to access web page
 
-##MySQL is also running using this docker-compose file and mysql server is linked to tomcat server.
+## MySQL is also running using this docker-compose file and mysql server is linked to tomcat server.
 
 You need to update your code for connecting employeedb database and its table by creating new table based on your requirement.
 
