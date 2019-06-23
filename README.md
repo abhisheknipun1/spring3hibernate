@@ -1,4 +1,4 @@
-# Spring3Hibernate - A OpsTree Sample Maven based Java Application
+# Spring3Hibernate - A Sample Maven based Java Application
 
 The main goal of this awesome Java Webapp is to encourage people to dive deep in Java Application Architecture and how we can make delivery pipeline faster, easier and much reliable using **Continous Integration**.
 
@@ -19,11 +19,11 @@ The list of dependencies are not quite long but yes we do have some dependencies
 docker-compose up -d
 (-d  -> detached mode For Running in background)
 
-This will run tomcat Server for Java Application and It will also use nginx server for reverse proxy for tomcat server.
+## This will run tomcat Server for Java Application and It will also use nginx server for reverse proxy for tomcat server.
 
 # Run 127.0.0.1 from web browser to access web page
 
-MySQL is also running using this docker-compose file and mysql server is linked to tomcat server.
+##MySQL is also running using this docker-compose file and mysql server is linked to tomcat server.
 
 You need to update your code for connecting employeedb database and its table by creating new table based on your requirement.
 
